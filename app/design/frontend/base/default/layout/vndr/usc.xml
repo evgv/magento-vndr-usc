@@ -1,0 +1,7 @@
+<layout version="0.1.0">
+    <cms_index_index translate="label">
+        <reference name="content">
+            <block type="vndr_usc/cms_cityweighttable" name="vndr_usc.cms_cityweighttable" template="vndr/usc/cms/cityweighttable.phtml"/>
+        </reference>
+    </cms_index_index>
+</layout>

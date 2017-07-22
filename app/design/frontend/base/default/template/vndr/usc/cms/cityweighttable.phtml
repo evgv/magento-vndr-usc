@@ -1,0 +1,68 @@
+<?php /*@see Vndr_Usc_Block_Cms_Cityweighttable */ ?>
+<?php /*@var $this Vndr_Usc_Block_Cms_Cityweighttable */ ?>
+
+
+<?php $data  = $this->getCityweighttable() ?>
+<?php $count = count($data); ?>
+<?php if($count): ?>
+    <div class="">
+
+        <div>
+            <h4><?php echo $this->__('City/weight table') ?></h4>
+        </div>
+
+        <ul class="table">
+            <?php $i = 1; ?>
+            <?php foreach ($data as $value): ?>
+                <li class="row <?php echo $i % 2 == 0 ? 'even' : 'odd' ?> <?php echo $i == 1 ? 'first' : '' ?> <?php echo $count == $i ? 'last' : '' ?>">
+                    <div class="col left">
+                        <?php echo $value['city'] ?>
+                    </div>
+                    <div class="col right">
+                        <?php echo $value['weight'] ?>
+                    </div>
+                </li>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+    <?php 
+        /**
+         * @todo styles into skin
+         */
+    ?>
+    <style>
+        ul.table {
+            width: 300px;
+        }
+        ul.table li.row {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        ul.table li.row div {
+            border: 1px solid;
+            width: 50%;
+            
+            padding: 10px;
+        }
+        
+        ul.table li.row.odd div {
+            border-bottom: none;
+            border-top: none;
+        }
+        
+        ul.table li.row div.right {
+            border-left: none;
+        }
+        
+        ul.table li.row.first div {
+            border-top: 1px solid;
+        }
+        
+        ul.table li.row.last div {
+            border-bottom: 1px solid;
+        }
+    </style>
+<?php endif;

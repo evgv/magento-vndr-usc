@@ -1,0 +1,15 @@
+# Adminhtml
+"City/weight table","Города/вес таблица"
+"City","Город"
+"--Please Select--","--Выберите вариант--"
+"Weight","Вес"
+"less then 5kg","до 5кг"
+"from 5 to 10kg","от 5 до 10кг"
+"greater then 10kg","более 10кг"
+"",""
+"",""
+
+# Frontend
+"",""
+"",""
+"",""

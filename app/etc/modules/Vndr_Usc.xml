@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Vndr_Usc>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends />
+        </Vndr_Usc>
+    </modules>
+</config>

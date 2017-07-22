@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+    
+    <modules>
+        <Vndr_Usc>
+            <version>0.1.0</version>
+        </Vndr_Usc>
+    </modules>
+    
+    <global>
+        <blocks>
+            <vndr_usc>
+                <class>Vndr_Usc_Block</class>
+            </vndr_usc>
+        </blocks>
+        <helpers>
+            <vndr_usc>
+                <class>Vndr_Usc_Helper</class>
+            </vndr_usc>
+        </helpers>
+        <models>
+            <vndr_usc>
+                <class>Vndr_Usc_Model</class>
+            </vndr_usc>
+        </models>
+    </global>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <vndr_usc>
+                    <file>vndr/usc.xml</file>
+                </vndr_usc>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Vndr_Usc>
+                    <files>
+                        <file>Vndr_Usc.csv</file>
+                    </files>
+                </Vndr_Usc>
+            </modules>
+        </translate>
+    </frontend>
+  
+    <adminhtml>
+        <translate>
+            <modules>
+                <Vndr_Usc>
+                    <files>
+                        <file>Vndr_Usc.csv</file>
+                    </files>
+                </Vndr_Usc>
+            </modules>
+        </translate>
+    </adminhtml>
+
+</config>

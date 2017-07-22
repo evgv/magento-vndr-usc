@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <menu>
+        <vndr module="vndr_usc">
+            <title><![CDATA[Vndr]]></title>
+            <sort_order>100</sort_order>
+            <children>
+                <usc module="vndr_usc">
+                    <title><![CDATA[Usc]]></title>
+                    <sort_order>10</sort_order>
+                    <children>
+                        <settings module="vndr_usc">
+                            <title><![CDATA[Settings]]></title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/system_config/edit/section/usc</action>
+                        </settings>
+                    </children>
+                </usc>
+            </children>
+        </vndr>
+    </menu>
+    
+    <acl>
+        <resources>
+            <all>
+              <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <usc>
+                                        <title><![CDATA[Usc]]></title>
+                                    </usc>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    
+</config>
